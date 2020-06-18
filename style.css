@@ -221,6 +221,13 @@ a{
     .main__menu{
         flex: 0.8;
     }
+    .second{
+        max-width: 960px;
+    }
+    .second__button{
+        font-size:18px;
+        padding: 10px 15px;
+    }
 }
 @media(max-width:1024px){
     .first{
@@ -246,6 +253,17 @@ a{
     .h1{
         font-size: 20px;
     }
+    .second{
+        max-width: 740px;
+        padding: 30px 100px;
+    }
+    .second__button{
+        font-size:18px;
+        padding: 10px 15px;
+    }
+    .second__subtitle{
+        margin-top: 15px;
+    }
 }
 @media(max-width:768px){
     .first{
@@ -253,12 +271,15 @@ a{
     }
     .first__container{
         max-width: 420px;
+        padding: 0 20px;
     }
     .container__header{
         max-width: 420px;
+        padding: 0 20px;
     }
     .container{
         max-width: 420px;
+        padding: 0 20px;
     }
     .main__menu{
         flex: 0.7;
@@ -275,8 +296,23 @@ a{
     .h1{
         font-size: 20px;
     }
+    .second{
+        max-width: 420px;
+        padding: 30px 10px;
+        padding: 0 20px;
+        margin-top: -30px;
+    }
+    .second__button{
+        margin-top: 10px;
+        font-size:12px;
+        padding: 5px 10px;
+    }
+    .second__subtitle{
+        margin-top: 10px;
+        font-size:8px;
+    }
 }
-@media(max-width: 425px){
+@media(max-width: 426px){
     .first{
         height: 180px;
     }
