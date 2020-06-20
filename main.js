@@ -6,18 +6,31 @@ let mySwiper = new Swiper ('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    speed: 400,
+    speed: 2000,
     spaceBetween: 50,
-    centeredSlides: false,
+    centeredSlides: true,
     slidesPerGroup: 1,
     slidesPerView: 3,
+    breakpoints: {
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        425: {
+            slidesPerView: 1,
+            spaceBetween: 100
+        }
+    },
     autoplay:{
-        delay: 1000
+        delay: 3000
     },
     fadeEffect: {
         crossFade: true
     },
-
 });
 
 const swiperWrapper = document.querySelector('.swiper-wrapper');
@@ -117,5 +130,16 @@ const render = function(){
         }
     });
 };
-render();
+// render();
 
+//Прокрутка с хедером
+const header = document.querySelector('.header');
+
+$(window).scroll(function(){
+	if ($(window).scrollTop() > 70){
+		header.style = " box-shadow: 0 10px 35px rgba(0,0,0,.15); background-color: #5555FF; opacity: .99; padding: 1% 0;";
+	}
+	else{
+		header.style = "";
+	}
+});

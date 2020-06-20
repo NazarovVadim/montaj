@@ -48,6 +48,7 @@ a{
     padding: 2% 0;
     width: 100%;
     z-index: 1000;
+    transition: all .2s;
 }
 .container__header{
     max-width: 1200px;
@@ -227,7 +228,6 @@ a{
     background: #e5e5e5;
     box-shadow: 0 0 10px rgba(0,0,0,.2);
     border-radius: 25px;
-    
 }
 .review__photo__profile{
     width: 75px;
@@ -375,6 +375,12 @@ background-color: #b9b9b9;
         font-size:18px;
         padding: 10px 15px;
     }
+    .swiper-slide{
+        max-width: 300px;
+    }
+    .review__card{
+        max-width: 250px;
+    }
 }
 @media(max-width:1024px){
     .first{
@@ -415,6 +421,12 @@ background-color: #b9b9b9;
     }
     .second__subtitle{
         margin-top: 15px;
+    }
+    .swiper-slide{
+        max-width: 300px;
+    }
+    .review__card{
+        max-width: 250px;
     }
 }
 @media(max-width:768px){
@@ -462,6 +474,12 @@ background-color: #b9b9b9;
     .second__subtitle{
         margin-top: 10px;
         font-size:8px;
+    }
+    .swiper-slide{
+        max-width: 250px;
+    }
+    .review__card{
+        max-width: 250px;
     }
 }
 @media(max-width: 426px){
